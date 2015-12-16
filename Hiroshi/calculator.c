@@ -9,7 +9,7 @@ int main()
 	float result;
 	char tmp[30];
 	int type;
-        char c[10] = {0};
+    char c[10] = {0};
 
 	printf("Type first number\n");
 	scanf("%f", &numA);
