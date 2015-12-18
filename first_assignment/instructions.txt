@@ -1,0 +1,59 @@
+======================== FIRST ASSIGNMENT ===========================
+======================== BATTLESHIP =================================
+
+// Please answer the questions below (if there are questions) using the command // "printf".
+
+- Question 0: How many libraries are you using and why?
+- Create a matrix with 10 rows and 10 columns
+- Make that matrix a new type
+- Question 1: What is the size of your new type(your matrix in bytes)?
+- Your battleship is going to have 4 types of ships:
+  
+  [][][][][] // this is your largest ship. it will occupy 5 position in the matrix
+             // We are going to call it "Monster Ship".
+
+  [][][]     // This is your second largest ship. it will ocuppy 3 positions in the matrix.
+             // We are going to call it "Big Ship".
+
+  [][]       // This is your third largest ship. it will ocuppy 2 positions in the matrix.
+             // We are going to call it "Medium Ship".
+
+  []         // This is your smallest ship. it will ocuppy only 1 position in the matrix.
+             // We are going to call it "Small Ship".
+
+- From those ships, your game will have 1 Monster Ship, 2 Big Ships, 2 Medium Ships and 5 Small Ships.
+- ALL of them need to be placed randomly in your matrix.
+- For the Monster Ship, place it vertically or horizontally at random.
+- For the Big Ships, place them only vertically.
+- For the Medium Ships, place them only horizontally.
+- For the Small Ship, you don't need to worry about that, it occupies only one position.
+
+- When you place them, be careful with the "Walls" of your matrix. Do not place ships that goes off the matrix.
+- Do not override the positions of the matrix with new ships. For example, if you have a ship at the position[0, 3],
+  do not create another one that overrides it. Check if there is a ship in there before setting it up.
+
+- The water in your game is going to be represented with the number "0" inside the matrix.
+- The Monster Ship is going to be represented by the number "1" inside the matrix.
+- The Big Ships are going to be represented by the numbers "2" and "3" inside the matrix.
+  // Please remember that they are two ships.
+  // This way is good to help you to differentiate your ships.
+- The Medium Ships are going to be represented by the numbers "4" and "5" inside the matrix.
+- The Small Ships are going to be represented by the numbers "6", "7", "8", "9" and "10" inside the matrix.
+- Question 3: What is the type of your matrix? Why did you choose that?
+
+At this point, your matrix will be ready for the game.
+
+- Ask the user to input the number of the row and column that will be checked.
+
+- If there is water, print "Miss", if there is a ship, do as following:
+  - print "Score"
+  - if you destroyed the ship, print "you've just destroyed a (name of the ship)!". 
+    // Example: "you've just destroyed a Monster Ship!"  
+
+- The game ends when the user destroy all ships.
+
+
+
+ 
+   
+  
