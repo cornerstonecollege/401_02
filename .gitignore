@@ -4,6 +4,7 @@
 *.o
 *.s
 a.out
+*.out
 .DS_Store
 *.dSYM
 *.swp

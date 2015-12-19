@@ -1,0 +1,12 @@
+Make a pacman on Scratch!
+:)
+https://scratch.mit.edu/
+
+- Make sure to create an account first and don't forget to save your project.
+
+- Make a pacman and two monsters
+- The pacman should move around the screen using the right, left, up and down keys.
+- If a monster touches a pacman, the pacman should die.
+- The monsters should move randomly on the screen.
+
+- Basically, all you need to do is surviving for 20 seconds. If you do, you win the game. 
