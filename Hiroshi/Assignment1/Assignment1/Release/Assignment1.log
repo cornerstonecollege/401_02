@@ -1,0 +1,34 @@
+﻿  BattleShip.c
+BattleShip.c(39): warning C4013: 'createShips' undefined; assuming extern returning int
+BattleShip.c(48): warning C4047: 'function': 'const char *' differs in levels of indirection from 'char **'
+BattleShip.c(48): warning C4024: 'atoi': different types for formal and actual parameter 1
+BattleShip.c(49): warning C4047: 'function': 'const char *' differs in levels of indirection from 'char **'
+BattleShip.c(49): warning C4024: 'atoi': different types for formal and actual parameter 1
+BattleShip.c(50): warning C4047: 'function': 'const char *' differs in levels of indirection from 'char **'
+BattleShip.c(50): warning C4024: 'atoi': different types for formal and actual parameter 1
+BattleShip.c(61): warning C4047: 'function': 'const char *' differs in levels of indirection from 'char **'
+BattleShip.c(61): warning C4024: 'atoi': different types for formal and actual parameter 1
+BattleShip.c(64): warning C4013: 'displayMap' undefined; assuming extern returning int
+BattleShip.c(44): warning C4477: 'scanf_s' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'char **'
+  BattleShip.c(44): note: this argument is used by a conversion specifier
+BattleShip.c(44): warning C4473: 'scanf_s' : not enough arguments passed for format string
+  BattleShip.c(44): note: placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+  BattleShip.c(44): note: the missing variadic argument 2 is required by format string '%s'
+  BattleShip.c(44): note: this argument is used as a buffer size
+BattleShip.c(46): warning C4473: 'scanf_s' : not enough arguments passed for format string
+  BattleShip.c(46): note: placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+  BattleShip.c(46): note: the missing variadic argument 2 is required by format string '%s'
+  BattleShip.c(46): note: this argument is used as a buffer size
+BattleShip.c(51): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'char **'
+  CreateShips.c
+CreateShips.c(86): warning C4013: 'srand' undefined; assuming extern returning int
+CreateShips.c(91): warning C4013: 'rand' undefined; assuming extern returning int
+  Display.c
+Display.c(26): warning C4013: 'printf' undefined; assuming extern returning int
+  Generating code
+  3 of 13 functions (23.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Assignment1.vcxproj -> C:\Visual Studio 2015\Projects\Assignment1\Release\Assignment1.exe
+  Assignment1.vcxproj -> C:\Visual Studio 2015\Projects\Assignment1\Release\Assignment1.pdb (Full PDB)
