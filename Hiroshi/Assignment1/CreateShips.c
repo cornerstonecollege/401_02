@@ -1,11 +1,12 @@
+#include <stdlib.h>
 #include <time.h>
 #include "./BattleShip.h"
 
-extern char map[ROW_SIZE][COLUM_SIZE] = { 0 };			// battle ship map(row:10, colum:10)
-extern char userMap[ROW_SIZE][COLUM_SIZE] = { 0 };		// battle ship map for users
-int type;												// put ships in horizontal or vertical
-int cnt;												// loop counter
-int v, h;												// v : vertical, h : horizontal position
+char map[ROW_SIZE][COLUM_SIZE] = { 0 };				// battle ship map(row:10, colum:10)
+char userMap[ROW_SIZE][COLUM_SIZE] = { 0 };			// battle ship map for users
+int type;							// put ships in horizontal or vertical
+int cnt;							// loop counter
+int v, h;							// v : vertical, h : horizontal position
 
 // **********************************************
 // (createVship)

@@ -22,14 +22,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "./BattleShip.h"
+#include "./Functions.h"
 
-extern int cntFinish = 0;			// finish counter. when the ship is detective, it's counted up
+int cntFinish = 0;		// finish counter. when the ship is detective, it's counted up
 
 int main() {
 
-	char rowNum[2], columNum[2];			// get a row and a colum number from the terminal 
-	int convRow, convColum;			// convert from char to int (row and colum)
-	int cntTotal = 1;				// game counter. If this counter is more than 50 times, the game will be over 
+	char rowNum[3], columNum[3];	// get a row and a colum number from the terminal 
+	int convRow, convColum;		// convert from char to int (row and colum)
+	int cntTotal = 1;		// game counter. If this counter is more than 50 times, the game will be over 
 
 	printf("****************************************\n");
 	printf("\tLet's play BATTLE SHIP\n");
@@ -41,9 +42,9 @@ int main() {
 	while (1) {
 		while (1) {
 			printf("type the row number   (1 - 10)\t");
-			scanf("\n%s", rowNum);
+			scanf("%s", rowNum);
 			printf("type the colum number (1 - 10)\t");
-			scanf("\n%s", columNum);
+			scanf("%s", columNum);
 			// selected numbers(row and colum) are more than 0, less than 11 and not allowed except numbers
 			if (atoi(rowNum) != 0 && atoi(columNum) != 0 &&
 				atoi(rowNum) < 11  && atoi(columNum) < 11 &&
