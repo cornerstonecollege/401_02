@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "./BattleShip.h"
 
 char map[ROW_SIZE][COLUM_SIZE];			// result map
@@ -113,6 +114,9 @@ void displayMap(int rowNum, int columNum) {
 			//if (userMap[row][colum] == '\0') {
 			//	userMap[row][colum] = WATER;
 			//}
+			if (userMap[row][colum] == '\0'){
+				printf(" ");
+			}
 			printf(" %c", userMap[row][colum]);
 		}
 		printf(" |\n");

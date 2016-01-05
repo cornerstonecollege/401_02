@@ -83,7 +83,7 @@ void createHship(int size, int number) {
 void createShips() {
 
 	// initializate for random
-	srand((int)time(NULL));
+	//srand((int)time(NULL));
 
 	// ****************
 	// monster ship
