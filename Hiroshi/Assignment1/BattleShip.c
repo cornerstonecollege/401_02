@@ -23,7 +23,6 @@
 #include <stdlib.h>
 #include "./BattleShip.h"
 
-
 extern int cntFinish = 0;			// finish counter. when the ship is detective, it's counted up
 
 int main() {
