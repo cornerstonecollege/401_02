@@ -32,6 +32,24 @@ int main() {
 	int convRow, convColum;		// convert from char to int (row and colum)
 	int cntTotal = 1;		// game counter. If this counter is more than 50 times, the game will be over 
 
+	printf("-------------------------\n");
+	printf("\tANSWERS\n");
+	printf("-------------------------\n");
+	
+	printf("QUESTION 0\n");
+        printf("I used 3 liblaries which are stdio.h, stdlib.h and time.h.\n");
+	printf("1. stdio.h is used for \"printf\" and \"scanf\"\n");
+	printf("2. stdlib.h is used for \"atoi\"\n");
+	printf("3. time.h is used for \"time\"\n");
+	printf("\tTo create rundom numbers when users click exe file\n");
+	
+	printf("QUESTION 1\n");
+        printf("I made 10 * 10 matrix by char. This Battle ship field is used 100 bytes.\n");
+	
+	printf("QUESTION 3\n");
+	printf("The matrix type is \"char\" because \"char\" is used 1 byte each.\n");
+	printf("In the battle ship field, we recognize ships by numbers.\n\n");	
+
 	printf("****************************************\n");
 	printf("\tLet's play BATTLE SHIP\n");
 	printf("****************************************\n\n");

@@ -92,8 +92,8 @@ void createShips() {
 	type = rand() % 2;
 	// vertical
 	if (type == 0) {
-		v = rand() % 9;
-		h = rand() % 5;
+		v = rand() % 10;
+		h = rand() % 6;
 		// create a monster ship (vertical)
 		// []
 		// []
@@ -104,8 +104,8 @@ void createShips() {
 	}
 	// horizontal
 	else {
-		v = rand() % 5;
-		h = rand() % 9;
+		v = rand() % 6;
+		h = rand() % 10;
 		// create a monster ship (horizontal)
 		// [][][][][]
 		createHship(5, MONSTER_SIZE);
@@ -117,14 +117,16 @@ void createShips() {
 	int bCnt;
 	for (bCnt = 0; bCnt < 2; bCnt++) {
 		while (1) {
-			type = rand() % 2;
+			//type = rand() % 2;
+			
 			// vertical
 			// []
 			// []
 			// []
-			if (type == 0) {
-				v = rand() % 9;
-				h = rand() % 7;
+			
+			//if (type == 0) {
+				v = rand() % 10;
+				h = rand() % 8;
 				if (map[h][v] == 0 && map[h + 1][v] == 0 && map[h + 2][v] == 0
 					//map[h][v] != WATER && map[h + 1][v] != WATER && map[h + 2][v] != WATER &&
 					//map[h][v] != MONSTER_SIZE && map[h + 1][v] != MONSTER_SIZE && map[h + 2][v] != MONSTER_SIZE &&
@@ -140,12 +142,14 @@ void createShips() {
 					
 					break;
 				}
-			}
+			//}
+			
+			/*
 			// horizontal
 			// [][][]
 			else {
-				v = rand() % 7;
-				h = rand() % 9;
+				v = rand() % 8;
+				h = rand() % 10;
 				if (map[h][v] == 0 && map[h + 1][v] == 0 && map[h + 2][v] == 0
 					//map[h][v] != WATER && map[h][v + 1] != WATER && map[h][v + 2] != WATER &&
 					//map[h][v] != MONSTER_SIZE && map[h][v + 1] != MONSTER_SIZE && map[h][v + 2] != MONSTER_SIZE &&
@@ -161,6 +165,7 @@ void createShips() {
 					break;
 				}
 			}
+			*/	
 		}
 	}
 
@@ -170,13 +175,15 @@ void createShips() {
 	int mCnt;
 	for (mCnt = 0; mCnt < 2; mCnt++) {
 		while (1) {
-			type = rand() % 2;
+			//type = rand() % 2;
+			
+			/*
 			// vertical
 			// []
 			// []
 			if (type == 0) {
-				v = rand() % 9;
-				h = rand() % 8;
+				v = rand() % 10;
+				h = rand() % 9;
 				if (map[h][v] == 0 && map[h + 1][v] == 0 && map[h + 2][v] == 0
 					//map[h][v] != WATER && map[h + 1][v] != WATER && map[h + 2][v] != WATER &&
 					//map[h][v] != MONSTER_SIZE && map[h + 1][v] != MONSTER_SIZE && map[h + 2][v] != MONSTER_SIZE &&
@@ -194,11 +201,13 @@ void createShips() {
 					break;
 				}
 			}
+			*/
+
 			// horizontal
 			// [][]
-			else {
-				v = rand() % 8;
-				h = rand() % 9;
+			//else {
+				v = rand() % 9;
+				h = rand() % 10;
 				if (map[h][v] == 0 && map[h + 1][v] == 0 && map[h + 2][v] == 0
 					//map[h][v] != WATER && map[h][v + 1] != WATER && map[h][v + 2] != WATER &&
 					//map[h][v] != MONSTER_SIZE && map[h][v + 1] != MONSTER_SIZE && map[h][v + 2] != MONSTER_SIZE &&
@@ -215,7 +224,7 @@ void createShips() {
 					}
 					break;
 				}
-			}
+			//}
 		}
 	}
 
