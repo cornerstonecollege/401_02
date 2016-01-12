@@ -2,8 +2,10 @@
 #include <ncurses.h>
 #include <stdlib.h>
 
+
 #define WIDTH 20
 #define HEIGHT 10
+
 
 #define CREATE_COLOR(A, B) init_pair(A, B, COLOR_BLACK)
 #define PACMAN_VALUE 1
