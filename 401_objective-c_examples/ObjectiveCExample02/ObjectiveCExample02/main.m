@@ -27,7 +27,7 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%@", student1);
         NSLog(@"%@", student2);
         NSLog(@"%@", student3);
-
+        
     }
     return 0;
 }
