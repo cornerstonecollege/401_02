@@ -1,8 +1,8 @@
 //
-//  HIROCalculator.h
-//  ObjectCExample02
+//  HIROCalclator.h
+//  Example02
 //
-//  Created by Hiroshi Tokutomi on 2016-01-12.
+//  Created by Hiroshi Tokutomi on 2016-01-14.
 //  Copyright © 2016 Hiroshi Tokutomi. All rights reserved.
 //
 

@@ -1,8 +1,8 @@
 //
 //  main.m
-//  ObjectCExample03
+//  Example03
 //
-//  Created by Hiroshi Tokutomi on 2016-01-13.
+//  Created by Hiroshi Tokutomi on 2016-01-14.
 //  Copyright © 2016 Hiroshi Tokutomi. All rights reserved.
 //
 
@@ -36,7 +36,8 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"\n## Mutable Dictionary ##\n%@", dictinary);
         NSLog(@"%@", [dictinary objectForKey:@1]);
-
+        
     }
     return 0;
 }
+
