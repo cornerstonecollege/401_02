@@ -6,27 +6,30 @@
 //  Copyright © 2016 Hiroshi Tokutomi. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <Foundation/Foundation.h>   // framework
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // Array
+        
+        // Array 1
         NSArray *myFruit = @[@"apple", @"banana"];
-        NSLog(@"\n## Array ##\n%@", myFruit);
+        NSLog(@"\n## Array 1 ##\n%@", myFruit);
         
+        // Array 2
         NSArray *myAnimal = [NSArray arrayWithObjects:@"lion", @"monkey", nil];
-        NSLog(@"\n## Array ##\n%@", myAnimal);
+        NSLog(@"\n## Array 2 ##\n%@", myAnimal);
         
-        // Dictionary
+        // Dictionary 1
         NSDictionary *students = [[NSDictionary alloc] initWithObjectsAndKeys:
                                   @"1", @"shawn", @"2", @"tomoko", nil];
+        NSLog(@"\n## Dictionaty 1 ##%@", students);
         
-        NSLog(@"\n## Dictionaty ##%@", students);
-        
+        // Dictionary 2
         NSDictionary *inventory = @{
                                     @1 : @"Luiz",
-                                    @"Hiroshi": @"Hiroshi",
+                                    @"Hiroshi": @"ABC",
                                     };
+        NSLog(@"## Dictionary 2 ##");
         NSLog(@"%@", inventory[@1]);
         NSLog(@"%@", [inventory objectForKey:@"Hiroshi"]);
         
