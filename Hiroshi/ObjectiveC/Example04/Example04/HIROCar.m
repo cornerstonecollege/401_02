@@ -10,7 +10,9 @@
 
 @implementation HIROCar
 
-- initWithColor:(NSString *)color andHeight:(float)height;
+// instancetype -> HIROCar
+// instancetype is for my children
+- (instancetype)initWithColor:(NSString *)color andHeight:(float)height;
 {
     self = [super init];
     
@@ -26,9 +28,9 @@
 // description -> toString
 -(NSString *)description
 {
-    return [NSString stringWithFormat:@"Color = %@, Height = %f",self.color, self.height];
+    // self.color -> refer to HIROCar.h name
+    return [NSString stringWithFormat:@"Color = %@, Height = %f", self.color, self.height];
 }
-
 
 
 

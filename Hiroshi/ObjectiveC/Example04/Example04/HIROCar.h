@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+// NSObject is my parents
 @interface HIROCar : NSObject
 
 // property -> get and set
@@ -16,6 +17,6 @@
 @property (readonly) float height;
 
 
-- initWithColor:(NSString *)color andHeight:(float)height;
+- (instancetype) initWithColor:(NSString *)color andHeight:(float)height;
 
 @end
