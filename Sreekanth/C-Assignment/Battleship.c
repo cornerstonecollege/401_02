@@ -45,6 +45,8 @@ int main()
  	createBigShips(matrix); 
  	createMediumShips(matrix);
  	createSmallShips(matrix); 
+ 	int row;
+ 	int col;
 
  	for(int i = 0; i < SIZE; i++)
  	{
@@ -57,6 +59,20 @@ int main()
 
  		printf("\n");
  	}
+
+ 	printf("Please enter the number of raw: \n");	
+ 	scanf("%i",&row);
+ 	printf("Please enter the number of column: \n");	
+ 	scanf("%i",&col);
+
+ 	if(matrix[row][col]==WATER_VALUE)
+ 		printf("Miss the Ship");
+ 	else
+ 	{
+ 		matrix_byte value = matrix[row][col];
+ 		//switch()
+ 	}
+
 
 	return 0;
 }
