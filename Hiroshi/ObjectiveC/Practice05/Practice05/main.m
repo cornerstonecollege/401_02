@@ -7,11 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "HIROAnimal.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        HIROAnimal *animal1 = [HIROAnimal alloc];
+        animal1 = [animal1 initWithName:@"lion" country:@"africa" andFood:24];
+        NSLog(@"\n%@", animal1);
+        
+        NSInteger monthlyFood = [HIROAnimal monthlyFood:10];
+        NSLog(@"\n%ld!!", monthlyFood);
     }
     return 0;
 }

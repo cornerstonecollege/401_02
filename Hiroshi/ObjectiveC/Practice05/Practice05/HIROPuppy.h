@@ -10,4 +10,6 @@
 
 @interface HIROPuppy : HIROAnimal
 
+@property NSString* nickName;
+
 @end

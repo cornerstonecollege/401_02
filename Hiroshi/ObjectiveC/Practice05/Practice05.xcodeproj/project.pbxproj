@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D407F25A1C4DDB8A00C7ED81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D407F2591C4DDB8A00C7ED81 /* main.m */; };
+		D407F2651C4DDC1100C7ED81 /* HIROAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = D407F2641C4DDC1100C7ED81 /* HIROAnimal.m */; };
+		D407F2681C4DDEF000C7ED81 /* HIROPuppy.m in Sources */ = {isa = PBXBuildFile; fileRef = D407F2671C4DDEF000C7ED81 /* HIROPuppy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		D407F2561C4DDB8A00C7ED81 /* Practice05 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Practice05; sourceTree = BUILT_PRODUCTS_DIR; };
 		D407F2591C4DDB8A00C7ED81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D407F2631C4DDC1100C7ED81 /* HIROAnimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIROAnimal.h; sourceTree = "<group>"; };
+		D407F2641C4DDC1100C7ED81 /* HIROAnimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIROAnimal.m; sourceTree = "<group>"; };
+		D407F2661C4DDEF000C7ED81 /* HIROPuppy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIROPuppy.h; sourceTree = "<group>"; };
+		D407F2671C4DDEF000C7ED81 /* HIROPuppy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIROPuppy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				D407F2591C4DDB8A00C7ED81 /* main.m */,
+				D407F2631C4DDC1100C7ED81 /* HIROAnimal.h */,
+				D407F2641C4DDC1100C7ED81 /* HIROAnimal.m */,
+				D407F2661C4DDEF000C7ED81 /* HIROPuppy.h */,
+				D407F2671C4DDEF000C7ED81 /* HIROPuppy.m */,
 			);
 			path = Practice05;
 			sourceTree = "<group>";
@@ -119,6 +129,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D407F25A1C4DDB8A00C7ED81 /* main.m in Sources */,
+				D407F2681C4DDEF000C7ED81 /* HIROPuppy.m in Sources */,
+				D407F2651C4DDC1100C7ED81 /* HIROAnimal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
