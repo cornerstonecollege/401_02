@@ -12,7 +12,6 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         HIROCar *car = [HIROCar alloc];                     // to allocate the memory
-        car = [car init];
         car = [car initWithColor:@"Blue" andHeight:123];    // to initialize the memory
         NSLog(@"%@", car);
     }
