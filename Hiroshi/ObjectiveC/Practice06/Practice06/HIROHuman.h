@@ -10,4 +10,9 @@
 
 @interface HIROHuman : NSObject
 
+@property (nonatomic) NSString* name;
+@property (nonatomic) NSInteger level;
+
+- (instancetype) initWithName:(NSString*)name andLevel:(NSInteger)level;
+
 @end

@@ -17,10 +17,10 @@
     
     if (self)
     {
-        CICCCWheel *firstWheel = [[CICCCWheel alloc] initWhithColorName:@"Black" andSizeInInches:15];
-        CICCCWheel *secondWheel = [[CICCCWheel alloc] initWhithColorName:@"Yellow" andSizeInInches:15];
-        CICCCWheel *thirdWheel = [[CICCCWheel alloc] initWhithColorName:@"Blue" andSizeInInches:15];
-        CICCCWheel *fourthWheel = [[CICCCWheel alloc] initWhithColorName:@"Orange" andSizeInInches:15];
+        CICCCWheel *firstWheel = [[CICCCWheel alloc] initWhithColorName:@"Black" sizeInInches:15 andBelongsTo:self];
+        CICCCWheel *secondWheel = [[CICCCWheel alloc] initWhithColorName:@"Yellow" sizeInInches:15 andBelongsTo:self];
+        CICCCWheel *thirdWheel = [[CICCCWheel alloc] initWhithColorName:@"Blue" sizeInInches:15 andBelongsTo:self];
+        CICCCWheel *fourthWheel = [[CICCCWheel alloc] initWhithColorName:@"Orange" sizeInInches:15 andBelongsTo:self];
         
         self.name = @"Car";
         self.wheels = @[firstWheel, secondWheel, thirdWheel, fourthWheel];

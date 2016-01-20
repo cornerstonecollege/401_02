@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D40768F21C4EF61900B446CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D40768F11C4EF61900B446CD /* main.m */; };
+		D40768FA1C4F1FB000B446CD /* HIROHuman.m in Sources */ = {isa = PBXBuildFile; fileRef = D40768F91C4F1FB000B446CD /* HIROHuman.m */; };
+		D40768FD1C4F22E500B446CD /* HIROSoldier.m in Sources */ = {isa = PBXBuildFile; fileRef = D40768FC1C4F22E500B446CD /* HIROSoldier.m */; };
+		D40769001C4F334500B446CD /* HIROWitch.m in Sources */ = {isa = PBXBuildFile; fileRef = D40768FF1C4F334500B446CD /* HIROWitch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		D40768EE1C4EF61800B446CD /* Practice06 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Practice06; sourceTree = BUILT_PRODUCTS_DIR; };
 		D40768F11C4EF61900B446CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D40768F81C4F1FB000B446CD /* HIROHuman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIROHuman.h; sourceTree = "<group>"; };
+		D40768F91C4F1FB000B446CD /* HIROHuman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIROHuman.m; sourceTree = "<group>"; };
+		D40768FB1C4F22E500B446CD /* HIROSoldier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIROSoldier.h; sourceTree = "<group>"; };
+		D40768FC1C4F22E500B446CD /* HIROSoldier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIROSoldier.m; sourceTree = "<group>"; };
+		D40768FE1C4F334500B446CD /* HIROWitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIROWitch.h; sourceTree = "<group>"; };
+		D40768FF1C4F334500B446CD /* HIROWitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIROWitch.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				D40768F11C4EF61900B446CD /* main.m */,
+				D40768F81C4F1FB000B446CD /* HIROHuman.h */,
+				D40768F91C4F1FB000B446CD /* HIROHuman.m */,
+				D40768FB1C4F22E500B446CD /* HIROSoldier.h */,
+				D40768FC1C4F22E500B446CD /* HIROSoldier.m */,
+				D40768FE1C4F334500B446CD /* HIROWitch.h */,
+				D40768FF1C4F334500B446CD /* HIROWitch.m */,
 			);
 			path = Practice06;
 			sourceTree = "<group>";
@@ -119,6 +134,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D40768F21C4EF61900B446CD /* main.m in Sources */,
+				D40768FD1C4F22E500B446CD /* HIROSoldier.m in Sources */,
+				D40768FA1C4F1FB000B446CD /* HIROHuman.m in Sources */,
+				D40769001C4F334500B446CD /* HIROWitch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

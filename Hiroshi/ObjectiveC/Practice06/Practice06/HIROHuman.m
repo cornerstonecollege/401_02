@@ -10,4 +10,17 @@
 
 @implementation HIROHuman
 
+// set atributions
+- (instancetype) initWithName:(NSString*)name andLevel:(NSInteger)level
+{
+    self = [super init];
+    if(self){
+        // set name and level
+        _name = name;
+        _level = level;
+    }
+    return self;
+}
+
+
 @end
