@@ -7,12 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+@class CICCCVehicle;
 
 @interface CICCCWheel : NSObject
 
 @property (nonatomic, readonly) NSString *colorName;
 @property (nonatomic, readonly) NSInteger sizeInInches;
+@property (nonatomic, readonly, weak) CICCCVehicle *belongsTo;
 
-- (instancetype) initWhithColorName:(NSString *)colorName andSizeInInches:(NSInteger)size;
+- (instancetype) initWhithColorName:(NSString *)colorName sizeInInches:(NSInteger)size andBelongsTo:(CICCCVehicle*)belongsTo;
 
 @end

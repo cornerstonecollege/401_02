@@ -18,8 +18,8 @@
     
     if (self)
     {
-        CICCCWheel *firstWheel = [[CICCCWheel alloc] initWhithColorName:@"Black" andSizeInInches:8];
-        CICCCWheel *secondWheel = [[CICCCWheel alloc] initWhithColorName:@"Black" andSizeInInches:8];
+        CICCCWheel *firstWheel = [[CICCCWheel alloc] initWhithColorName:@"Black" sizeInInches:8 andBelongsTo:self];
+        CICCCWheel *secondWheel = [[CICCCWheel alloc] initWhithColorName:@"Black" sizeInInches:8 andBelongsTo:self];
         
         self.name = @"Motocycle";
         self.wheels = [NSArray arrayWithObjects:firstWheel, secondWheel, nil];

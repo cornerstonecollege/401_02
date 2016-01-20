@@ -16,7 +16,7 @@
     return nil;
 }
 
-- (instancetype)initWhithColorName:(NSString *)colorName andSizeInInches:(NSInteger)size
+- (instancetype)initWhithColorName:(NSString *)colorName sizeInInches:(NSInteger)size andBelongsTo:(CICCCVehicle*)belongsTo
 {
     self = [super init];
     
@@ -24,9 +24,15 @@
     {
         _colorName = colorName;
         _sizeInInches = size;
+        _belongsTo = belongsTo;
     }
     
     return self;
+}
+
+-(NSString *)description{
+
+    return [NSString stringWithFormat:@"Wheel - color name %@, size %lu, belongs to %@", self.colorName, self.sizeInInches, self.belongsTo ];
 }
 
 @end
