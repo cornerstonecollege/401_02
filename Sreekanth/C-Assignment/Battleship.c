@@ -56,6 +56,14 @@ int main()
  	int row;
  	int col;
 
+ 	printf("Question 0: How many libraries are you using and why? \n"
+ 			"Answer: I am using 4 libraries. stdio.h for basic input and output like printf and scanf\n"
+ 			"stdbool.h for boolean function,time.h for system time object and stdlib.h for random function.\n"
+ 			"Question 1: What is the size of your new type(your matrix in bytes)?\n"
+ 			"Answer:100\n"
+ 			 "Question 3: What is the type of your matrix? Why did you choose that?\n"
+ 			 "Answer:matrix_byte, to be easier to understand the code\n");
+
  	for(int i = 0; i < SIZE; i++)
  	{
  		for(int j = 0; j < SIZE; j++)
@@ -81,6 +89,7 @@ int main()
 	 	else
 	 	{
 	 		matrix_byte value = matrix[row][col];
+	 		
 	 		// the ship was shot
 	 		matrix[row][col] = WATER_VALUE;
 	 		
@@ -99,11 +108,97 @@ int main()
 	 				}
 	 				break;
 	 			}
+
+	 			case BIG_VALUE_A:
+	 			{
+	 				nShotsOnBigShipA++;
+	 				if(nShotsOnBigShipA == BIG_SIZE)
+	 				{
+	 					printf("you've just destroyed a Big Ship A!\n");
+	 				}
+	 				else
+	 				{
+	 					printf("You just shot a Big Ship A\n");
+	 				}
+	 				break;
+	 			}
+
+	 			case BIG_VALUE_B:
+	 			{
+	 				nShotsOnBigShipB++;
+	 				if(nShotsOnBigShipB == BIG_SIZE)
+	 				{
+	 					printf("you've just destroyed a Big Ship B!\n");
+	 				}
+	 				else
+	 				{
+	 					printf("You just shot a Big Ship B\n");
+	 				}
+	 				break;
+	 			}
+
+	 			case MEDIUM_VALUE_A:
+	 			{
+	 				 nShotsOnMediumShipA++;
+	 				if( nShotsOnMediumShipA == MEDIUM_SIZE)
+	 				{
+	 					printf("you've just destroyed a Medium Ship A!\n");
+	 				}
+	 				else
+	 				{
+	 					printf("You just shot a Medium Ship A \n");
+	 				}
+	 				break;
+	 			}
+
+	 			case MEDIUM_VALUE_B:
+	 			{
+	 				 nShotsOnMediumShipB++;
+	 				if( nShotsOnMediumShipB == MEDIUM_SIZE)
+	 				{
+	 					printf("you've just destroyed a Medium Ship B!\n");
+	 				}
+	 				else
+	 				{
+	 					printf("You just shot a Medium Ship B \n");
+	 				}
+	 				break;
+	 			}
+
+	 			case SMALL_VALUE_A:
+	 			{
+	 				printf("you've just destroyed a Small Ship A!\n");
+	 				break;
+	 			}
+
+	 			case SMALL_VALUE_B:
+	 			{
+	 				printf("you've just destroyed a Small Ship B!\n");
+	 				break;
+	 			}
+
+	 			case SMALL_VALUE_C:
+	 			{
+	 				printf("you've just destroyed a Small Ship C!\n");
+	 				break;
+	 			}
+
+	 			case SMALL_VALUE_D:
+	 			{
+	 				printf("you've just destroyed a Small Ship D!\n");
+	 				break;
+	 			}
+
+	 			case SMALL_VALUE_E:
+	 			{
+	 				printf("you've just destroyed a Small Ship E!\n");
+	 				break;
+	 			}
 	 		}
 	 	}
 	 }
 
-	 // printf you win the game
+	 printf(" Congrats !!! You Won the Game !!\n");
 
 	return 0;
 }
