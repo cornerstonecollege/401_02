@@ -36,7 +36,15 @@ void createMonsterShip(matrix_byte m[SIZE][SIZE]);
 void createBigShips(matrix_byte m[SIZE][SIZE]);
 void createMediumShips(matrix_byte m[SIZE][SIZE]);
 void createSmallShips(matrix_byte m[SIZE][SIZE]);
+bool stopLoopWithMatrix(matrix_byte m[SIZE][SIZE]);
 
+char nShotsOnMonsterShip = 0;
+char nShotsOnBigShipA = 0;
+char nShotsOnBigShipB = 0;
+char nShotsOnMediumShipA = 0;
+char nShotsOnMediumShipB = 0;
+
+// for small ships we don't need to count, because their size is 1
 
 int main()
 {
@@ -60,21 +68,58 @@ int main()
  		printf("\n");
  	}
 
- 	printf("Please enter the number of raw: \n");	
- 	scanf("%i",&row);
- 	printf("Please enter the number of column: \n");	
- 	scanf("%i",&col);
 
- 	if(matrix[row][col]==WATER_VALUE)
- 		printf("Miss the Ship");
- 	else
+ 	while(!stopLoopWithMatrix(matrix))
  	{
- 		matrix_byte value = matrix[row][col];
- 		//switch()
- 	}
+ 		printf("Please enter the number of row: \n");	
+ 		scanf("%i",&row);
+ 		printf("Please enter the number of column: \n");	
+ 		scanf("%i",&col);
 
+ 		if(matrix[row][col] == WATER_VALUE)
+ 			printf("Miss the Ship\n");
+	 	else
+	 	{
+	 		matrix_byte value = matrix[row][col];
+	 		// the ship was shot
+	 		matrix[row][col] = WATER_VALUE;
+	 		
+	 		switch(value)
+	 		{
+	 			case MONSTER_VALUE:
+	 			{
+	 				nShotsOnMonsterShip++;
+	 				if (nShotsOnMonsterShip == MONSTER_SIZE)
+	 				{
+	 					printf("you've just destroyed a Monster Ship!\n");
+	 				}
+	 				else
+	 				{
+	 					printf("You just shot a Monster Ship\n");
+	 				}
+	 				break;
+	 			}
+	 		}
+	 	}
+	 }
+
+	 // printf you win the game
 
 	return 0;
+}
+
+bool stopLoopWithMatrix(matrix_byte m[SIZE][SIZE])
+{
+	for (int i = 0; i < SIZE; i++)
+	{
+		for (int j = 0; j < SIZE; j++)
+		{
+			if (m[i][j] != WATER_VALUE)
+				return false;
+		}
+	}
+
+	return true;
 }
 
 void createMonsterShip(matrix_byte m[SIZE][SIZE])
