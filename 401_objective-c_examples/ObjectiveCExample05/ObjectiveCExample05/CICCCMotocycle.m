@@ -7,7 +7,31 @@
 //
 
 #import "CICCCMotocycle.h"
+#import "CICCCWheel.h"
+
 
 @implementation CICCCMotocycle
+
+- (instancetype) init
+{
+    self = [super init];
+    
+    if (self)
+    {
+        CICCCWheel *firstWheel = [[CICCCWheel alloc] initWhithColorName:@"Black" andSizeInInches:8];
+        CICCCWheel *secondWheel = [[CICCCWheel alloc] initWhithColorName:@"Black" andSizeInInches:8];
+        
+        self.name = @"Motocycle";
+        self.wheels = [NSArray arrayWithObjects:firstWheel, secondWheel, nil];
+        self.numberOfGears = 4;
+    }
+    
+    return self;
+}
+
+- (void)goForward
+{
+    NSLog(@"Motocycle went forward.");
+}
 
 @end

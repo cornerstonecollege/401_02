@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		08E577351C4EEAA90006A133 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E577341C4EEAA90006A133 /* main.m */; };
+		08E5773D1C4EEB6D0006A133 /* CICCCVehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E5773C1C4EEB6D0006A133 /* CICCCVehicle.m */; };
+		08E577401C4EEC360006A133 /* CICCCWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E5773F1C4EEC360006A133 /* CICCCWheel.m */; };
+		08E577431C4EF2670006A133 /* CICCCMotocycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E577421C4EF2670006A133 /* CICCCMotocycle.m */; };
+		08E577461C4EF5640006A133 /* CICCCCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E577451C4EF5640006A133 /* CICCCCar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,14 @@
 /* Begin PBXFileReference section */
 		08E577311C4EEAA90006A133 /* ObjectiveCExample05 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjectiveCExample05; sourceTree = BUILT_PRODUCTS_DIR; };
 		08E577341C4EEAA90006A133 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		08E5773B1C4EEB6D0006A133 /* CICCCVehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CICCCVehicle.h; sourceTree = "<group>"; };
+		08E5773C1C4EEB6D0006A133 /* CICCCVehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CICCCVehicle.m; sourceTree = "<group>"; };
+		08E5773E1C4EEC360006A133 /* CICCCWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CICCCWheel.h; sourceTree = "<group>"; };
+		08E5773F1C4EEC360006A133 /* CICCCWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CICCCWheel.m; sourceTree = "<group>"; };
+		08E577411C4EF2670006A133 /* CICCCMotocycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CICCCMotocycle.h; sourceTree = "<group>"; };
+		08E577421C4EF2670006A133 /* CICCCMotocycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CICCCMotocycle.m; sourceTree = "<group>"; };
+		08E577441C4EF5640006A133 /* CICCCCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CICCCCar.h; sourceTree = "<group>"; };
+		08E577451C4EF5640006A133 /* CICCCCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CICCCCar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,14 @@
 			isa = PBXGroup;
 			children = (
 				08E577341C4EEAA90006A133 /* main.m */,
+				08E577441C4EF5640006A133 /* CICCCCar.h */,
+				08E577451C4EF5640006A133 /* CICCCCar.m */,
+				08E5773E1C4EEC360006A133 /* CICCCWheel.h */,
+				08E5773F1C4EEC360006A133 /* CICCCWheel.m */,
+				08E5773B1C4EEB6D0006A133 /* CICCCVehicle.h */,
+				08E5773C1C4EEB6D0006A133 /* CICCCVehicle.m */,
+				08E577411C4EF2670006A133 /* CICCCMotocycle.h */,
+				08E577421C4EF2670006A133 /* CICCCMotocycle.m */,
 			);
 			path = ObjectiveCExample05;
 			sourceTree = "<group>";
@@ -118,7 +138,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08E5773D1C4EEB6D0006A133 /* CICCCVehicle.m in Sources */,
+				08E577401C4EEC360006A133 /* CICCCWheel.m in Sources */,
+				08E577461C4EF5640006A133 /* CICCCCar.m in Sources */,
 				08E577351C4EEAA90006A133 /* main.m in Sources */,
+				08E577431C4EF2670006A133 /* CICCCMotocycle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

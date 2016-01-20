@@ -10,4 +10,6 @@
 
 @interface CICCCCar : CICCCVehicle
 
+- (void) goBackward;
+
 @end

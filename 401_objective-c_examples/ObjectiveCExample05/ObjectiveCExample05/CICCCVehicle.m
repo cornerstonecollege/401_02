@@ -10,4 +10,19 @@
 
 @implementation CICCCVehicle
 
+- (void)goForward
+{
+    NSLog(@"Vehicle went forward.");
+}
+
+- (void)doBreak
+{
+    NSLog(@"Vehicle did break.");
+}
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"%@ - number of weels: %lu number of gears: %lu.", self.name, [self.wheels count], self.numberOfGears];
+}
+
 @end

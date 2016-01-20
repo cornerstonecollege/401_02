@@ -10,4 +10,9 @@
 
 @interface CICCCWheel : NSObject
 
+@property (nonatomic, readonly) NSString *colorName;
+@property (nonatomic, readonly) NSInteger sizeInInches;
+
+- (instancetype) initWhithColorName:(NSString *)colorName andSizeInInches:(NSInteger)size;
+
 @end

@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+@class CICCCWheel;
+
 @interface CICCCVehicle : NSObject
+
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSArray<CICCCWheel *> *wheels;
+@property (nonatomic) NSInteger numberOfGears;
+
+- (void) goForward;
+- (void) doBreak;
 
 @end
