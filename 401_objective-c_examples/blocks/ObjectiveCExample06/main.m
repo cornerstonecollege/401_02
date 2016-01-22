@@ -9,12 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "CICCCBlock.h"
 #import "CICCCSecondBlock.h"
+#import "CICCCThirdBlock.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool
     {
         //[CICCCBlock print];
-        [[[CICCCSecondBlock alloc] init] print];
+        //[[[CICCCSecondBlock alloc] init] print];
+        [CICCCThirdBlock print];
     }
     return 0;
 }
