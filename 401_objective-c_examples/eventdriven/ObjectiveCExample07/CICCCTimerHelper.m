@@ -30,4 +30,16 @@
     NSLog(@"Did finish loading");
 }
 
+- (void) onClick
+{
+    NSLog(@"HAUUHAHUsuha");
+}
+
+- (void) doOnClick
+{
+    CICCCProtocol *myProtocol = [[CICCCProtocol alloc] init];
+    myProtocol.delegate = self;
+    [myProtocol doAction];
+}
+
 @end

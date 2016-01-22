@@ -23,6 +23,8 @@ int main(int argc, const char * argv[]) {
         
         [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:1]];
         
+        [helper doOnClick];
+        
     }
     
     return 0;

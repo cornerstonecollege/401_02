@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CICCCProtocol.h"
 
-@interface CICCCTimerHelper : NSObject <NSURLConnectionDelegate, NSURLConnectionDataDelegate>
+@interface CICCCTimerHelper : NSObject <NSURLConnectionDelegate, NSURLConnectionDataDelegate, CICCCProtocolDelegate>
 
 - (void) print:(NSTimer *)timer;
+- (void) doOnClick;
 
 @end
