@@ -14,7 +14,7 @@ int main(int argc, const char * argv[]) {
     {
         // block : like a function pointer
         // return type is NSNumber
-        
+        // ^ : caret
         
         //First way
         //NSNumber* (^myBlock)(NSNumber*, NSNumber*) = ^ NSNumber* (NSNumber *x, NSNumber *y)
@@ -28,13 +28,11 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%@", myResult);
         
         // Second way
-        
         //NSNumber *myResult = [HIROCalculate calculateWithBlock:^NSNumber* (NSNumber *x, NSNumber *y)
         //{
         //    return [NSNumber numberWithFloat:([x floatValue] + [y floatValue])];
         //} A:@2 andB:@3];
         //NSLog(@"%@", myResult);
-        
         
         NSNumber *myResult2 = [HIROCalculate calculateWithBlock:^NSNumber* (NSNumber *var1, NSNumber *var2)
         {

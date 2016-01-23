@@ -10,6 +10,7 @@
 
 @implementation HIROCalculate
 
+// important
 + (NSNumber*) calculateWithBlock:(NSNumber* (^) (NSNumber*, NSNumber*))block A:(NSNumber*)a andB:(NSNumber*)b
 {
     return block(a, b);
