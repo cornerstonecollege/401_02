@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirstSwiftApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNU-DR-nwk">
+                                <rect key="frame" x="230" y="106" width="140" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="SOx-jL-fg0"/>
+                                    <constraint firstAttribute="height" constant="46" id="dsC-1w-jaL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECT-C5-faO">
+                                <rect key="frame" x="230" y="396" width="63" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="bxc-Ua-Ady"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Add "/>
+                                <connections>
+                                    <action selector="Add1OnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZDu-13-jzS"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o5d-xL-Gnc">
+                                <rect key="frame" x="301" y="405" width="112" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="112" id="dVS-fK-lZF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="doneEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="aup-tT-ICd"/>
+                                    <action selector="jaca:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="cAo-n3-9ML"/>
+                                    <action selector="retrun:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="T8h-Dg-cDm"/>
+                                    <action selector="txtDoneEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="66v-g0-IbB"/>
+                                    <action selector="xaxxaxa:" destination="BYZ-38-t0r" eventType="valueChanged" id="RnU-u7-xY5"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="o5d-xL-Gnc" firstAttribute="leading" secondItem="ECT-C5-faO" secondAttribute="trailing" constant="8" symbolic="YES" id="2pv-Za-v1z"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ECT-C5-faO" secondAttribute="bottom" constant="156" id="Bs1-1y-jLs"/>
+                            <constraint firstItem="JNU-DR-nwk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hdt-KQ-8zk"/>
+                            <constraint firstItem="o5d-xL-Gnc" firstAttribute="baseline" secondItem="ECT-C5-faO" secondAttribute="baseline" id="NCt-WG-ut7"/>
+                            <constraint firstItem="JNU-DR-nwk" firstAttribute="leading" secondItem="ECT-C5-faO" secondAttribute="leading" id="dgD-zm-ZSV"/>
+                            <constraint firstItem="JNU-DR-nwk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="86" id="kuf-iH-UcY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblCount" destination="JNU-DR-nwk" id="59c-NA-8hq"/>
+                        <outlet property="txtNumber" destination="o5d-xL-Gnc" id="fby-dW-xMm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="385"/>
+        </scene>
+    </scenes>
+</document>
